@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Multithreading", "Multithre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task2", "Epam.Multithreading.Task2\Epam.Multithreading.Task2.csproj", "{BC2D0C09-DFCC-4DC7-BDA3-2C66AF38DD5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task3", "Epam.Multithreading.Task3\Epam.Multithreading.Task3.csproj", "{6DAD48A4-6027-46FD-BD57-D2113743AB20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{BC2D0C09-DFCC-4DC7-BDA3-2C66AF38DD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC2D0C09-DFCC-4DC7-BDA3-2C66AF38DD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC2D0C09-DFCC-4DC7-BDA3-2C66AF38DD5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DAD48A4-6027-46FD-BD57-D2113743AB20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DAD48A4-6027-46FD-BD57-D2113743AB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DAD48A4-6027-46FD-BD57-D2113743AB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DAD48A4-6027-46FD-BD57-D2113743AB20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1FDF1468-E03E-422F-9BA2-8AC85EB6762D} = {2A5B2833-638D-4552-8A23-6EA3B6A2143C}
 		{BC2D0C09-DFCC-4DC7-BDA3-2C66AF38DD5C} = {2A5B2833-638D-4552-8A23-6EA3B6A2143C}
+		{6DAD48A4-6027-46FD-BD57-D2113743AB20} = {2A5B2833-638D-4552-8A23-6EA3B6A2143C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7188AE4C-4DE7-445E-8198-01264493FA3A}
