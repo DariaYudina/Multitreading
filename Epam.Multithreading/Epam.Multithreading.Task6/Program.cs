@@ -12,47 +12,52 @@ namespace Epam.Multithreading.Task6
         static List<string> collection = new List<string>();
         static bool collectionChanged = false;
         static object locker = new object();
+        static Task task1 = new Task(WorkWithCollection);
+        static Task task2 = new Task(WorkWithCollection);
 
         static void Main(string[] args)
         {
-
-            Parallel.For(0, 20, WorkWithCollection);
+            task1.Start();
+            task2.Start();
             Console.Read();
         }
 
-        public static void WorkWithCollection(int x)
+        public static void WorkWithCollection()
         {
-            lock (locker)
+            for (int i = 0; i < 10; i++)
             {
-                if (collectionChanged == false)
+                lock (locker)
                 {
-                    collection.Add("element");
-                    Console.WriteLine("element added");
-                    collectionChanged = true;
-                    Thread.Sleep(2000);
-                }
-                else
-                {
-                    foreach (var item in collection)
+
+                    if (!collectionChanged)
                     {
-                        Console.WriteLine(item);
+                        AddingToCollection(i);
                     }
-                    collectionChanged = false;
-                    Thread.Sleep(2000);
+                    else
+                    {
+                        PrintCollection(i);
+                    }
+                    Thread.Sleep(1000);
                 }
             }
         }
 
-        public static void DisplayCollection()
+        private static void PrintCollection(int i)
         {
-            if(collectionChanged == true)
+            foreach (var item in collection)
             {
-                foreach (var item in collection)
-                {
-                    Console.WriteLine(item);
-                }
-                collectionChanged = false;
+                Console.WriteLine(item);
             }
+            collectionChanged = false;
+            Console.WriteLine($"Thread Id: {Thread.CurrentThread.ManagedThreadId}; iteration: {i}");
+        }
+
+        private static void AddingToCollection(int i)
+        {
+            collection.Add("element");
+            Console.WriteLine("element added");
+            collectionChanged = true;
+            Console.WriteLine($"Thread Id: {Thread.CurrentThread.ManagedThreadId}; iteration: {i}");
         }
     }
 }

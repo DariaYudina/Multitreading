@@ -7,20 +7,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task1",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Multithreading", "Multithreading", "{2A5B2833-638D-4552-8A23-6EA3B6A2143C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task2", "Epam.Multithreading.Task2\Epam.Multithreading.Task2.csproj", "{BC2D0C09-DFCC-4DC7-BDA3-2C66AF38DD5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task2", "Epam.Multithreading.Task2\Epam.Multithreading.Task2.csproj", "{BC2D0C09-DFCC-4DC7-BDA3-2C66AF38DD5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task3", "Epam.Multithreading.Task3\Epam.Multithreading.Task3.csproj", "{6DAD48A4-6027-46FD-BD57-D2113743AB20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task3", "Epam.Multithreading.Task3\Epam.Multithreading.Task3.csproj", "{6DAD48A4-6027-46FD-BD57-D2113743AB20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task4", "Epam.Multithreading.Task4\Epam.Multithreading.Task4.csproj", "{012FAFB9-A75E-4119-AA1B-D429073C4C24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task4", "Epam.Multithreading.Task4\Epam.Multithreading.Task4.csproj", "{012FAFB9-A75E-4119-AA1B-D429073C4C24}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C0635854-A35A-41E5-9F3D-6915B7E32449}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task5", "Epam.Multithreading.Task5\Epam.Multithreading.Task5.csproj", "{9E01A888-D88F-4732-B642-2A33A40DE6C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task5", "Epam.Multithreading.Task5\Epam.Multithreading.Task5.csproj", "{9E01A888-D88F-4732-B642-2A33A40DE6C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task6", "Epam.Multithreading.Task6\Epam.Multithreading.Task6.csproj", "{8F4E6306-1CD9-4B4D-AB72-C29AB76FDB07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task6", "Epam.Multithreading.Task6\Epam.Multithreading.Task6.csproj", "{8F4E6306-1CD9-4B4D-AB72-C29AB76FDB07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task7", "Epam.Multithreading.Task7\Epam.Multithreading.Task7.csproj", "{F8AB7A07-6E12-4F6B-A64E-15F728D36A95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +54,10 @@ Global
 		{8F4E6306-1CD9-4B4D-AB72-C29AB76FDB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F4E6306-1CD9-4B4D-AB72-C29AB76FDB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F4E6306-1CD9-4B4D-AB72-C29AB76FDB07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8AB7A07-6E12-4F6B-A64E-15F728D36A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8AB7A07-6E12-4F6B-A64E-15F728D36A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8AB7A07-6E12-4F6B-A64E-15F728D36A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8AB7A07-6E12-4F6B-A64E-15F728D36A95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{012FAFB9-A75E-4119-AA1B-D429073C4C24} = {2A5B2833-638D-4552-8A23-6EA3B6A2143C}
 		{9E01A888-D88F-4732-B642-2A33A40DE6C4} = {2A5B2833-638D-4552-8A23-6EA3B6A2143C}
 		{8F4E6306-1CD9-4B4D-AB72-C29AB76FDB07} = {2A5B2833-638D-4552-8A23-6EA3B6A2143C}
+		{F8AB7A07-6E12-4F6B-A64E-15F728D36A95} = {2A5B2833-638D-4552-8A23-6EA3B6A2143C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7188AE4C-4DE7-445E-8198-01264493FA3A}
