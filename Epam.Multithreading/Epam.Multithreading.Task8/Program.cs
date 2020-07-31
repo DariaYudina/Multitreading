@@ -8,16 +8,19 @@ namespace Epam.Multithreading.Task8
     {
         static void SumOfNumbers(int n, CancellationToken token)
         {
-            Console.WriteLine("Started to calculate factorial of " + n);
+            Console.WriteLine();
+            Console.WriteLine("Started to calculate sum of " + n);
             int result = 1;
             for (int i = 1; i <= n; i++)
             {
                 if (token.IsCancellationRequested)
                 {
+                    Console.WriteLine();
                     Console.WriteLine("Process inerrupted");
                     return;
                 }
                 result += i;
+                Console.WriteLine();
                 Console.WriteLine($"Sum of {i} is {result}");
                 Thread.Sleep(1000);
             }
@@ -31,6 +34,7 @@ namespace Epam.Multithreading.Task8
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter upper limit:");
             CancellationTokenSource cts = new CancellationTokenSource();
             Task task = SumAsync(Convert.ToInt32(Console.ReadLine()), cts.Token);
 
@@ -39,6 +43,7 @@ namespace Epam.Multithreading.Task8
                 Task.Delay(5000);
                 bool result;
                 int input;
+                Console.WriteLine("Enter new upper limit if you want:");
                 ReadUserInput(ConsoleReadLineWithTimeout(), out result, out input);
                 if (result)
                 {
@@ -57,8 +62,7 @@ namespace Epam.Multithreading.Task8
         public static string ConsoleReadLineWithTimeout()
         {
             Task<string> task = Task.Factory.StartNew(Console.ReadLine);
-
-            string result = Task.WaitAny(new Task[] { task }, TimeSpan.FromSeconds(2)) == 0
+            string result = Task.WaitAny(new Task[] { task }, TimeSpan.FromSeconds(10)) == 0
                 ? task.Result
                 : string.Empty;
             return result;
