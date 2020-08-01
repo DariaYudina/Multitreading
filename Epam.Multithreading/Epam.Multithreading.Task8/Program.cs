@@ -36,15 +36,23 @@ namespace Epam.Multithreading.Task8
         {
             Console.WriteLine("Enter upper limit:");
             CancellationTokenSource cts = new CancellationTokenSource();
-            Task task = SumAsync(Convert.ToInt32(Console.ReadLine()), cts.Token);
+            ReadUserInput(Console.ReadLine(), out bool success, out int i);
+            Task task;
+            if (success)
+            {
+                task = SumAsync(i, cts.Token);
+            }
+            else
+            {
+                Console.WriteLine("You entered not a number");
+                return;
+            }
 
             while (!task.IsCompletedSuccessfully)
             {
                 Task.Delay(5000);
-                bool result;
-                int input;
                 Console.WriteLine("Enter new upper limit if you want:");
-                ReadUserInput(ConsoleReadLineWithTimeout(), out result, out input);
+                ReadUserInput(ConsoleReadLineWithTimeout(), out bool result, out int input);
                 if (result)
                 {
                     cts.Cancel();
