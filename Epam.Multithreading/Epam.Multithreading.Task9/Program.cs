@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using System.Net.Http;
 using System.Net;
-using System.Net.Http.Headers;
 using System.IO;
 using System.Threading;
 using System.Text.RegularExpressions;
@@ -12,13 +10,18 @@ namespace Epam.Multithreading.Task9
 {
     public class WebRequestGetExample
     {
-        static void DownloadPage(string url)
+        static void DownloadPage(string url, CancellationToken token)
         {
-            Thread.Sleep(2000);
+            Thread.Sleep(8000);
+            if (token.IsCancellationRequested)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Process inerrupted");
+                return;
+            }
             Console.WriteLine("start " + url);
             WebRequest request = WebRequest.Create(url);
             request.Credentials = CredentialCache.DefaultCredentials;
-
             WebResponse response = request.GetResponse();
 
             using (Stream dataStream = response.GetResponseStream())
@@ -32,9 +35,11 @@ namespace Epam.Multithreading.Task9
             Thread.Sleep(1000);
             Console.WriteLine("stop " + url);
         }
-        static async Task DownloadPageAsync(string url)
+        static async Task DownloadPageAsync(string url, CancellationToken token)
         {
-            await Task.Run(() => DownloadPage(url));
+            if (token.IsCancellationRequested)
+                return;
+            await Task.Run(() => DownloadPage(url, token));
         }
 
         static void Main(string[] args)
@@ -57,24 +62,21 @@ namespace Epam.Multithreading.Task9
 
             string[] urlsArr = urls.ToArray();
             List<Task> tasks = new List<Task>();
+            CancellationTokenSource cts = new CancellationTokenSource();
             foreach (var item in urlsArr)
             {
-                tasks.Add(DownloadPageAsync(item));
+                tasks.Add(DownloadPageAsync(item, cts.Token));
             }
-            CancellationTokenSource cts = new CancellationTokenSource();
-            Task task = Task.Run(() => Task.WaitAll(tasks.ToArray(), cts.Token));
-            while (!task.IsCompletedSuccessfully)
+            Task task = Task.Run(() => { Task.WaitAll(tasks.ToArray()); });
+            while (!task.IsCompletedSuccessfully || !cts.Token.IsCancellationRequested)
             {
-                Thread.Sleep(1000);
-                Console.WriteLine("Enter any key if you wantwant to cancel the download");
-                cts.Cancel();
-                Thread.Sleep(3000);
-                break;
+                Console.WriteLine("Enter \"y\" if you want to cancel the download:");
+                if(ConsoleReadLineWithTimeout() == "y")
+                {
+                    cts.Cancel();
+                }
+                Thread.Sleep(8000);
             }
-
-            //Task task1 = DownloadPageAsync("https://docs.microsoft.com");
-            //Task task3 = DownloadPageAsync("https://yandex.ru");
-            //Task.WaitAll(task1, task3);
         }
 
         public static string ConsoleReadLineWithTimeout()
