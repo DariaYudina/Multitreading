@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Epam.Multithreading.Task10.BLL\Epam.Multithreading.Task10.BLL.csproj" />
+    <ProjectReference Include="..\Epam.Multithreading.Task10.DAL\Epam.Multithreading.Task10.DAL.csproj" />
+    <ProjectReference Include="..\Epam.Multithreading.Task10.IBLL\Epam.Multithreading.Task10.IBLL.csproj" />
+    <ProjectReference Include="..\Epam.Multithreading.Task10.IDAL\Epam.Multithreading.Task10.IDAL.csproj" />
+  </ItemGroup>
+
+</Project>
