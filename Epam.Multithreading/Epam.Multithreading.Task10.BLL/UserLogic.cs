@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Epam.Multithreading.Task10.Entities;
 using Epam.Multithreading.Task10.IBLL;
 using Epam.Multithreading.Task10.IDAL;
@@ -16,29 +17,29 @@ namespace Epam.Multithreading.Task10.BLL
             _userDao = userDao;
         }
 
-        public int CreateUser(User user)
+        public Task<int> CreateUser(User user)
         {
-            throw new NotImplementedException();
+            return _userDao.CreateUser(user);
         }
 
-        public bool DeleteUser(int Id)
+        public Task<bool> DeleteUser(int Id)
         {
-            throw new NotImplementedException();
+            return _userDao.DeleteUser(Id);
         }
 
-        public User GetUser(int Id)
+        public Task<User> GetUser(int Id)
         {
-            throw new NotImplementedException();
+            return _userDao.GetUser(Id);
         }
 
-        public IEnumerable<User> GetUsers()
+        public Task<IEnumerable<User>> GetUsers()
         {
-            throw new NotImplementedException();
+            return _userDao.GetUsers();
         }
 
-        public bool UpdateUser(User user)
+        public Task<bool> UpdateUser(User user)
         {
-            throw new NotImplementedException();
+            return _userDao.UpdateUser(user);
         }
     }
 }

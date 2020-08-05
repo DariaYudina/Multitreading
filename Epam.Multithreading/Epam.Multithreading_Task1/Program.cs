@@ -18,6 +18,7 @@ namespace Epam.Multithreading_Task1
             Console.ReadLine();
 
         }
+
         static void Method()
         {
             for (int i = 1; i <= 1000; i++)

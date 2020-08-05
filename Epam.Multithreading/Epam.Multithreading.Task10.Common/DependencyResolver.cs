@@ -11,7 +11,7 @@ namespace Epam.Multithreading.Task10.Common
 {
     public static class DependencyResolver
     {
-        public static IUserLogic UserLogic => new UserLogic(UserDao);
+        public static IUserLogic UserLogic { get; }
 
         public static IUserDao UserDao { get; }
 
@@ -19,6 +19,7 @@ namespace Epam.Multithreading.Task10.Common
         {
             string sqlConnection = ConfigurationManager.ConnectionStrings["UsersDB"].ConnectionString;
             UserDao = new UserDao(sqlConnection);
+            UserLogic = new UserLogic(UserDao);
         }
     }
 }

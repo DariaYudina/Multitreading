@@ -22,29 +22,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task5",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task6", "Epam.Multithreading.Task6\Epam.Multithreading.Task6.csproj", "{8F4E6306-1CD9-4B4D-AB72-C29AB76FDB07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task7", "Epam.Multithreading.Task7\Epam.Multithreading.Task7.csproj", "{F8AB7A07-6E12-4F6B-A64E-15F728D36A95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task7", "Epam.Multithreading.Task7\Epam.Multithreading.Task7.csproj", "{F8AB7A07-6E12-4F6B-A64E-15F728D36A95}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsyncAwait", "AsyncAwait", "{CE578310-F922-491D-8589-FC416FE17369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task8", "Epam.Multithreading.Task8\Epam.Multithreading.Task8.csproj", "{5C0F19C9-699D-4971-AE68-6372D9A7D126}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task8", "Epam.Multithreading.Task8\Epam.Multithreading.Task8.csproj", "{5C0F19C9-699D-4971-AE68-6372D9A7D126}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task9", "Epam.Multithreading.Task9\Epam.Multithreading.Task9.csproj", "{6DC63B66-6FBE-40A5-A4CD-0CDD5C11F49B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task9", "Epam.Multithreading.Task9\Epam.Multithreading.Task9.csproj", "{6DC63B66-6FBE-40A5-A4CD-0CDD5C11F49B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task10", "Task10", "{E43764E0-86D5-4F0A-999B-BB8D17DE3C0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task10.IDAL", "Epam.Multithreading.Task10.IDAL\Epam.Multithreading.Task10.IDAL.csproj", "{5E425615-6446-41CB-A106-D1C9782CBD47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task10.IDAL", "Epam.Multithreading.Task10.IDAL\Epam.Multithreading.Task10.IDAL.csproj", "{5E425615-6446-41CB-A106-D1C9782CBD47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task10.DAL", "Epam.Multithreading.Task10.DAL\Epam.Multithreading.Task10.DAL.csproj", "{A2CCD8FB-9531-44E9-91A2-3E8CE8B14544}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task10.DAL", "Epam.Multithreading.Task10.DAL\Epam.Multithreading.Task10.DAL.csproj", "{A2CCD8FB-9531-44E9-91A2-3E8CE8B14544}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task10.Entities", "Epam.Multithreading.Task10.Entities\Epam.Multithreading.Task10.Entities.csproj", "{7D49F3CB-EA21-4BE8-BA7E-E531C1B3C949}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task10.Entities", "Epam.Multithreading.Task10.Entities\Epam.Multithreading.Task10.Entities.csproj", "{7D49F3CB-EA21-4BE8-BA7E-E531C1B3C949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task10.BLL", "Epam.Multithreading.Task10.BLL\Epam.Multithreading.Task10.BLL.csproj", "{7BA8AA01-7031-4225-9B5C-037DFA3FF255}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task10.BLL", "Epam.Multithreading.Task10.BLL\Epam.Multithreading.Task10.BLL.csproj", "{7BA8AA01-7031-4225-9B5C-037DFA3FF255}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task10.IBLL", "Epam.Multithreading.Task10.IBLL\Epam.Multithreading.Task10.IBLL.csproj", "{05FE696C-E273-43A9-9AFD-7DCBAACB2096}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.Multithreading.Task10.IBLL", "Epam.Multithreading.Task10.IBLL\Epam.Multithreading.Task10.IBLL.csproj", "{05FE696C-E273-43A9-9AFD-7DCBAACB2096}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task10.ConsoleUI", "Epam.Multithreading.Task10.ConsoleUI\Epam.Multithreading.Task10.ConsoleUI.csproj", "{8D365C23-E97D-453A-A96A-D4CF4EE3319F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task10.ConsoleUI", "Epam.Multithreading.Task10.ConsoleUI\Epam.Multithreading.Task10.ConsoleUI.csproj", "{5207D210-9C2E-40FA-BD48-3E185F915EF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task10.Common", "Epam.Multithreading.Task10.Common\Epam.Multithreading.Task10.Common.csproj", "{9EECD81A-D38A-4E12-B220-37A2FCBB2567}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.Multithreading.Task10.Common", "Epam.Multithreading.Task10.Common\Epam.Multithreading.Task10.Common.csproj", "{42C45E73-2CF4-4652-B9CE-94C613354E05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -108,14 +108,14 @@ Global
 		{05FE696C-E273-43A9-9AFD-7DCBAACB2096}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05FE696C-E273-43A9-9AFD-7DCBAACB2096}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05FE696C-E273-43A9-9AFD-7DCBAACB2096}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D365C23-E97D-453A-A96A-D4CF4EE3319F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D365C23-E97D-453A-A96A-D4CF4EE3319F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D365C23-E97D-453A-A96A-D4CF4EE3319F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D365C23-E97D-453A-A96A-D4CF4EE3319F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9EECD81A-D38A-4E12-B220-37A2FCBB2567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9EECD81A-D38A-4E12-B220-37A2FCBB2567}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9EECD81A-D38A-4E12-B220-37A2FCBB2567}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9EECD81A-D38A-4E12-B220-37A2FCBB2567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5207D210-9C2E-40FA-BD48-3E185F915EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5207D210-9C2E-40FA-BD48-3E185F915EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5207D210-9C2E-40FA-BD48-3E185F915EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5207D210-9C2E-40FA-BD48-3E185F915EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C45E73-2CF4-4652-B9CE-94C613354E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C45E73-2CF4-4652-B9CE-94C613354E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C45E73-2CF4-4652-B9CE-94C613354E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C45E73-2CF4-4652-B9CE-94C613354E05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -136,8 +136,8 @@ Global
 		{7D49F3CB-EA21-4BE8-BA7E-E531C1B3C949} = {E43764E0-86D5-4F0A-999B-BB8D17DE3C0C}
 		{7BA8AA01-7031-4225-9B5C-037DFA3FF255} = {E43764E0-86D5-4F0A-999B-BB8D17DE3C0C}
 		{05FE696C-E273-43A9-9AFD-7DCBAACB2096} = {E43764E0-86D5-4F0A-999B-BB8D17DE3C0C}
-		{8D365C23-E97D-453A-A96A-D4CF4EE3319F} = {E43764E0-86D5-4F0A-999B-BB8D17DE3C0C}
-		{9EECD81A-D38A-4E12-B220-37A2FCBB2567} = {E43764E0-86D5-4F0A-999B-BB8D17DE3C0C}
+		{5207D210-9C2E-40FA-BD48-3E185F915EF1} = {E43764E0-86D5-4F0A-999B-BB8D17DE3C0C}
+		{42C45E73-2CF4-4652-B9CE-94C613354E05} = {E43764E0-86D5-4F0A-999B-BB8D17DE3C0C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7188AE4C-4DE7-445E-8198-01264493FA3A}
